@@ -1,0 +1,1132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Official Partnership Proposal</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #e74c3c;
+            --accent: #3498db;
+            --light: #f9f7f7;
+            --dark: #2c3e50;
+            --pink: #ff6b81;
+            --gold: #e6b89c;
+            --light-gold: #f8f1eb;
+            --success: #2ecc71;
+            --warning: #f39c12;
+            --danger: #e74c3c;
+            --rose-gold: #b76e79;
+            --soft-pink: #ffdfe3;
+            --pale-gold: #f6e6c9;
+            --purple: #9b59b6;
+            --teal: #1abc9c;
+            --orange: #e67e22;
+            --blue: #3498db;
+        }
+
+        * {
+            box-sizing: border-box;
+            transition: all 0.3s ease;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.7;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+            color: var(--dark);
+            background-attachment: fixed;
+            background-image:
+                radial-gradient(circle at 10% 20%, rgba(255, 223, 227, 0.4) 0%, rgba(255, 223, 227, 0) 20%),
+                radial-gradient(circle at 90% 80%, rgba(230, 184, 156, 0.3) 0%, rgba(230, 184, 156, 0) 25%),
+                url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23e6b89c' fill-opacity='0.1' fill-rule='evenodd'/%3E%3C/svg%3E");
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 40px;
+            background: #fff;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(255, 255, 255, 0.5);
+            border-radius: 20px;
+            border-top: 8px solid var(--pink);
+            position: relative;
+            overflow: hidden;
+            backdrop-filter: blur(5px);
+        }
+
+        .container:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, var(--pink) 0%, var(--gold) 100%);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .floating-hearts {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .heart-icon {
+            position: absolute;
+            color: rgba(255, 107, 129, 0.2);
+            font-size: 20px;
+            animation: float 8s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 0.6;
+            }
+
+            100% {
+                transform: translateY(-100px) rotate(20deg);
+                opacity: 0;
+            }
+        }
+
+        header {
+            text-align: center;
+            padding-bottom: 30px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: 'Playfair Display', serif;
+        }
+
+        h1 {
+            color: var(--primary);
+            margin-bottom: 10px;
+            font-size: 2.8em;
+            position: relative;
+            display: inline-block;
+            padding-bottom: 10px;
+            font-weight: 700;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        h1:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 25%;
+            width: 50%;
+            height: 3px;
+            background: linear-gradient(90deg, var(--pink) 0%, var(--gold) 100%);
+            border-radius: 3px;
+        }
+
+        h2 {
+            color: var(--primary);
+            border-bottom: 2px solid var(--gold);
+            padding-bottom: 10px;
+            margin-top: 40px;
+            position: relative;
+            padding-left: 25px;
+            font-weight: 600;
+            background: linear-gradient(to right, rgba(230, 184, 156, 0.1), transparent);
+            padding-top: 10px;
+            padding-right: 15px;
+            border-radius: 0 0 8px 0;
+        }
+
+        h2:before {
+            content: "❤";
+            position: absolute;
+            left: 0;
+            top: 10px;
+            font-size: 1.2em;
+            color: var(--pink);
+        }
+
+        h3 {
+            color: var(--primary);
+            margin-top: 25px;
+            padding-left: 15px;
+            border-left: 3px solid var(--gold);
+            font-weight: 500;
+            background: linear-gradient(to right, rgba(230, 184, 156, 0.05), transparent);
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-right: 10px;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .confidential {
+            background: linear-gradient(135deg, var(--primary) 0%, #3a5169 100%);
+            color: white;
+            padding: 18px;
+            text-align: center;
+            font-size: 0.95em;
+            border-radius: 15px;
+            margin-bottom: 35px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .confidential:after {
+            content: "CONFIDENTIAL";
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            font-size: 3.2em;
+            opacity: 0.05;
+            transform: translateY(-50%);
+            font-weight: bold;
+            pointer-events: none;
+            letter-spacing: 5px;
+        }
+
+        .toc {
+            background-color: var(--light-gold);
+            padding: 30px;
+            border-radius: 15px;
+            margin: 30px 0;
+            border-left: 4px solid var(--gold);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .toc:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, var(--pink) 0%, var(--gold) 100%);
+        }
+
+        .toc ul {
+            list-style-type: none;
+            padding-left: 20px;
+        }
+
+        .toc li {
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 25px;
+        }
+
+        .toc li:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: var(--pink);
+            font-weight: bold;
+        }
+
+        .toc a {
+            color: var(--accent);
+            text-decoration: none;
+            transition: all 0.3s;
+            position: relative;
+            font-weight: 500;
+            display: inline-block;
+        }
+
+        .toc a:after {
+            content: "";
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--pink);
+            transition: width 0.3s ease;
+        }
+
+        .toc a:hover {
+            color: var(--pink);
+            padding-left: 5px;
+        }
+
+        .toc a:hover:after {
+            width: 100%;
+        }
+
+        .signature-box {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 1px dashed #ccc;
+            flex-wrap: wrap;
+        }
+
+        .signature {
+            text-align: center;
+            margin: 15px;
+            min-width: 250px;
+            position: relative;
+            padding: 20px;
+            background: var(--light-gold);
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .signature-line {
+            width: 100%;
+            border-bottom: 1px solid #ccc;
+            margin: 15px 0;
+            padding-top: 25px;
+        }
+
+        .options {
+            display: flex;
+            justify-content: space-around;
+            margin: 40px 0;
+            flex-wrap: wrap;
+        }
+
+        .option {
+            text-align: center;
+            padding: 30px 20px;
+            border: 2px solid #eee;
+            border-radius: 15px;
+            width: 240px;
+            margin: 15px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            background: #fff;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .option:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: #ddd;
+            transition: all 0.3s ease;
+        }
+
+        .option:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .option.accept:before {
+            background: var(--success);
+        }
+
+        .option.meeting:before {
+            background: var(--warning);
+        }
+
+        .option.decline:before {
+            background: var(--danger);
+        }
+
+        .option input[type="radio"] {
+            margin-bottom: 15px;
+            transform: scale(1.4);
+            accent-color: var(--pink);
+        }
+
+        .accept-selected {
+            background-color: rgba(46, 204, 113, 0.08);
+            border-color: var(--success);
+        }
+
+        .meeting-selected {
+            background-color: rgba(243, 156, 18, 0.08);
+            border-color: var(--warning);
+        }
+
+        .decline-selected {
+            background-color: rgba(231, 76, 60, 0.08);
+            border-color: var(--danger);
+        }
+
+        #responseMessage {
+            text-align: center;
+            padding: 30px;
+            font-size: 1.5em;
+            font-weight: bold;
+            color: var(--primary);
+            margin-top: 25px;
+            display: none;
+            border: 2px solid var(--accent);
+            border-radius: 15px;
+            background: #fff;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 0.5s ease;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        button {
+            background: linear-gradient(135deg, var(--accent) 0%, #2980b9 100%);
+            color: white;
+            border: none;
+            padding: 16px 40px;
+            border-radius: 50px;
+            cursor: pointer;
+            font-size: 1.1em;
+            display: block;
+            margin: 40px auto;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 25px rgba(52, 152, 219, 0.35);
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        button:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 100%;
+            background: linear-gradient(135deg, #2980b9 0%, var(--accent) 100%);
+            transition: all 0.5s ease;
+            z-index: -1;
+        }
+
+        button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(52, 152, 219, 0.45);
+        }
+
+        button:hover:before {
+            width: 100%;
+        }
+
+        .heart {
+            color: var(--pink);
+            animation: pulse 1.5s infinite;
+            display: inline-block;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.2);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            font-size: 0.95em;
+            color: #7f8c8d;
+            padding-top: 25px;
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        ul {
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 12px;
+            position: relative;
+            padding-left: 30px;
+        }
+
+        li:before {
+            content: "•";
+            color: var(--pink);
+            position: absolute;
+            left: 0;
+            font-size: 1.8em;
+            line-height: 1;
+            top: -5px;
+        }
+
+        input[type="text"] {
+            border: none;
+            border-bottom: 1px dashed #ccc;
+            text-align: center;
+            padding: 8px;
+            font-family: 'Montserrat', sans-serif;
+            width: 140px;
+            font-size: 1em;
+            background: transparent;
+            transition: all 0.3s;
+        }
+
+        input[type="text"]:focus {
+            outline: none;
+            border-bottom: 2px dashed var(--accent);
+            box-shadow: 0 2px 5px rgba(52, 152, 219, 0.2);
+        }
+
+        .highlight {
+            background: linear-gradient(120deg, rgba(255, 107, 129, 0.15) 0%, rgba(230, 184, 156, 0.15) 100%);
+            padding: 3px 8px;
+            border-radius: 6px;
+            font-weight: 500;
+        }
+
+        .quote {
+            font-style: italic;
+            border-left: 4px solid var(--gold);
+            padding-left: 20px;
+            margin: 25px 0;
+            color: #555;
+            background: var(--light-gold);
+            padding: 20px;
+            border-radius: 0 12px 12px 0;
+            position: relative;
+        }
+
+        .quote:before {
+            content: "";
+            position: absolute;
+            top: -20px;
+            left: 10px;
+            font-size: 60px;
+            color: var(--gold);
+            opacity: 0.2;
+            font-family: Georgia, serif;
+        }
+
+        .stamp {
+            position: absolute;
+            right: 30px;
+            top: 30px;
+            opacity: 0.1;
+            transform: rotate(15deg);
+            font-size: 80px;
+            color: var(--pink);
+            filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.2));
+        }
+
+        .ribbon {
+            position: absolute;
+            top: -5px;
+            right: -5px;
+            width: 110px;
+            height: 110px;
+            overflow: hidden;
+        }
+
+        .ribbon::before {
+            content: "Special";
+            position: absolute;
+            width: 150px;
+            height: 30px;
+            background: linear-gradient(45deg, var(--pink) 0%, var(--gold) 100%);
+            transform: rotate(45deg) translateY(-20px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-weight: 600;
+            font-size: 0.8em;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* NEW STYLES */
+        .color-section {
+            background: linear-gradient(135deg, var(--soft-pink) 0%, var(--pale-gold) 100%);
+            padding: 25px;
+            border-radius: 15px;
+            margin: 25px 0;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+            border-left: 5px solid var(--purple);
+        }
+
+        .color-section h3 {
+            color: var(--purple);
+            border-left-color: var(--purple);
+        }
+
+        .color-section-alt {
+            background: linear-gradient(135deg, rgba(155, 89, 182, 0.1) 0%, rgba(52, 152, 219, 0.1) 100%);
+            border-left-color: var(--teal);
+        }
+
+        .color-section-alt h3 {
+            color: var(--teal);
+            border-left-color: var(--teal);
+        }
+
+        .fun-facts {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+
+        .fact {
+            flex: 0 0 48%;
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            border-top: 3px solid var(--orange);
+        }
+
+        .fact:nth-child(2n) {
+            border-top-color: var(--blue);
+        }
+
+        .fact:nth-child(3n) {
+            border-top-color: var(--teal);
+        }
+
+        .fact:nth-child(4n) {
+            border-top-color: var(--purple);
+        }
+
+        .interests {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin: 20px 0;
+        }
+
+        .interest-tag {
+            background: linear-gradient(135deg, var(--pink) 0%, var(--purple) 100%);
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: 500;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .interest-tag:nth-child(2n) {
+            background: linear-gradient(135deg, var(--teal) 0%, var(--blue) 100%);
+        }
+
+        .interest-tag:nth-child(3n) {
+            background: linear-gradient(135deg, var(--orange) 0%, var(--gold) 100%);
+        }
+
+        .timeline {
+            position: relative;
+            margin: 30px 0;
+            padding-left: 30px;
+        }
+
+        .timeline:before {
+            content: '';
+            position: absolute;
+            left: 15px;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: linear-gradient(to bottom, var(--pink), var(--gold));
+            border-radius: 3px;
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 25px;
+            padding: 15px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .timeline-item:before {
+            content: '';
+            position: absolute;
+            left: -30px;
+            top: 20px;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background: var(--pink);
+            border: 3px solid white;
+            box-shadow: 0 0 0 3px var(--pink);
+        }
+
+        .timeline-date {
+            font-weight: bold;
+            color: var(--pink);
+            margin-bottom: 5px;
+        }
+
+        .photo-collage {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin: 25px 0;
+        }
+
+        .photo-placeholder {
+            width: 120px;
+            height: 120px;
+            background: linear-gradient(135deg, var(--soft-pink) 0%, var(--pale-gold) 100%);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--pink);
+            font-size: 2em;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .photo-placeholder:nth-child(2n) {
+            background: linear-gradient(135deg, rgba(155, 89, 182, 0.2) 0%, rgba(52, 152, 219, 0.2) 100%);
+            color: var(--purple);
+        }
+
+        .photo-placeholder:nth-child(3n) {
+            background: linear-gradient(135deg, rgba(230, 126, 34, 0.2) 0%, rgba(231, 76, 60, 0.2) 100%);
+            color: var(--orange);
+        }
+
+        .promise {
+            background: linear-gradient(135deg, rgba(46, 204, 113, 0.1) 0%, rgba(52, 152, 219, 0.1) 100%);
+            padding: 20px;
+            border-radius: 12px;
+            margin: 20px 0;
+            border-left: 5px solid var(--success);
+        }
+
+        .promise h4 {
+            color: var(--success);
+            margin-top: 0;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 25px;
+                margin: 20px;
+            }
+
+            .options {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .option {
+                width: 100%;
+                max-width: 300px;
+            }
+
+            .signature-box {
+                flex-direction: column;
+            }
+
+            h1 {
+                font-size: 2.2em;
+            }
+
+            .stamp {
+                font-size: 60px;
+                right: 15px;
+                top: 15px;
+            }
+
+            .ribbon {
+                display: none;
+            }
+
+            .fact {
+                flex: 0 0 100%;
+            }
+
+            .photo-placeholder {
+                width: 100px;
+                height: 100px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="floating-hearts" id="floatingHearts"></div>
+        <div class="stamp">
+            <i class="fas fa-heart"></i>
+        </div>
+        <div class="ribbon"></div>
+
+        <header>
+            <div class="confidential">
+                CONFIDENTIAL & PROPRIETARY<br>
+                For the exclusive review of: <strong>Person X</strong><br>
+                Date of Issue: <strong>9/19/2025</strong>
+            </div>
+            <h1>OFFICIAL BOYFRIEND PROPOSAL</h1>
+            <p><strong>Document ID:</strong> LOVE-PROP-2024-[W>.E]-[S.I]</p>
+            <p><strong>Proposing Party:</strong> [Warima Edgar]</p>
+            <p><strong>Receiving Party:</strong> [Person X]</p>
+        </header>
+
+        <section id="preamble">
+            <h2>1. Preamble & Executive Summary</h2>
+            <p>This document serves as a formal and heartfelt proposal from <strong>[Warima Edgar]</strong> to
+                <strong>[Person X]</strong>, outlining a sincere desire to transition from our current status to a
+                defined, exclusive, and committed romantic relationship, herein referred to as "Boyfriend and
+                Girlfriend."</p>
+
+          
+
+            <p>The purpose of this proposal is to transparently communicate the immense value you bring to my life,
+                define the mutual benefits of this partnership, and formally request your agreement to embark on this
+                new chapter together. After extensive qualitative research and heartfelt consideration, the data is
+                irrefutable: we are an exceptional match.</p>
+        </section>
+
+        <section id="toc">
+            <h2>Table of Contents</h2>
+            <div class="toc">
+                <ul>
+                    <li><a href="#preamble">1. Preamble & Executive Summary</a></li>
+                    <li><a href="#about-me">2. About the Proposer</a></li>
+                    <li><a href="#intent">3. Statement of Intent</a></li>
+                    <li><a href="#analysis">4. Qualitative Analysis: Why You Are The Ideal Candidate</a>
+                        <ul>
+                            <li><a href="#analysis">4.1. Character and Core Values</a></li>
+                            <li><a href="#analysis">4.2. Compatibility and Synergy</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#role">5. Defining the Role: Boyfriend Position Overview</a></li>
+                    <li><a href="#terms">6. Term & Conditions</a></li>
+                    <li><a href="#acceptance">7. Next Steps & Formal Acceptance</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="about-me" class="color-section">
+            <h2>2. About the Proposer</h2>
+            <p>Before we proceed, allow me to introduce myself more personally. I'm Warima Edgar, and here's what makes
+                me who I am:</p>
+
+            <div class="fun-facts">
+                <div class="fact">
+                    <h4>My Passions</h4>
+                    <p>I'm deeply passionate about technology, creative problem-solving, and making people laugh. I
+                        believe life is too short to be taken too seriously!</p>
+                </div>
+                <div class="fact">
+                    <h4>My Strengths</h4>
+                    <p>I'm a great listener, surprisingly good at cooking, and I can fix most
+                        tech problems. I'm also incredibly loyal to those I care about.</p>
+                </div>
+                <div class="fact">
+                    <h4>My Quirks</h4>
+                    <p>I have an inexplicable love for weird jokes, I'm slightly obsessed with finding the perfect coffee,
+                        and I can quote way too many movies from memory.</p>
+                </div>
+                <div class="fact">
+                    <h4>My Dreams</h4>
+                    <p>I want to build a life filled with adventure, laughter, and meaningful connections. I dream of becoming rich and 
+                        traveling the world with someone special by my side.</p>
+                </div>
+            </div>
+
+            <h3>My Interests</h3>
+            <div class="interests">
+                <div class="interest-tag">Technology & Innovation</div>
+                <div class="interest-tag">Travel & Adventure</div>
+                <div class="interest-tag">Good Food & Cooking</div>
+                <div class="interest-tag">Movies & TV Series</div>
+                <div class="interest-tag">Music of All Kinds</div>
+                <div class="interest-tag">Personal Growth</div>
+                <div class="interest-tag">Meaningful Conversations</div>
+                <div class="interest-tag">Making People Smile</div>
+            </div>
+
+            <h3>Our Journey So Far</h3>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">The Beginning</div>
+                    <p>From our first conversation, I knew there was something special about you. Your intelligence,
+                        wit, and kindness immediately drew me in.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Getting to Know You</div>
+                    <p>Every moment we've spent together has confirmed what I initially felt. Your laughter is
+                        infectious, your perspective is refreshing, and your presence is comforting.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">The Realization</div>
+                    <p>It didn't take long for me to realize that I don't just enjoy your company - I'm better when I'm
+                        with you. You bring out the best in me.</p>
+                </div>
+            </div>
+
+            <div class="photo-collage">
+                <div class="photo-placeholder">
+                    <i class="fas fa-camera"></i>
+                </div>
+                <div class="photo-placeholder">
+                    <i class="fas fa-smile"></i>
+                </div>
+                <div class="photo-placeholder">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <div class="photo-placeholder">
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+        </section>
+
+        <section id="intent">
+            <h2>3. Statement of Intent</h2>
+            <p>I, <strong>[Warima Edgar]</strong>, hereby declare my strong desire to officially appoint you,
+                <strong>[Person X]</strong>, to the position of <span class="highlight">My Girlfriend</span>.</p>
+            <p>This is not a decision made lightly. It is the result of observing your character, enjoying your company,
+                and recognizing the unique and positive impact you have on my life. This proposal signifies my
+                commitment to fostering a relationship built on trust, respect, laughter, and mutual support.</p>
+
+            <div class="promise">
+                <h4>My Promise to You</h4>
+                <p>If you accept this proposal, I promise to always be honest with you, to support your dreams as if
+                    they were my own, to make you laugh even on difficult days, and to continually work to be the
+                    partner you deserve.</p>
+            </div>
+        </section>
+
+        <section id="analysis" class="color-section-alt">
+            <h2>4. Qualitative Analysis: Why You Are The Ideal Candidate</h2>
+            <h3>4.1. Character and Core Values</h3>
+            <p>Through careful observation and interaction, I have identified several key attributes that make you
+                exceptionally qualified for this role:</p>
+            <ul>
+                <li><strong>Exceptional Intelligence & Wit:</strong> Your mind is one of your most attractive features.
+                    Conversations with you are stimulating and never dull.</li>
+                <li><strong>Genuine Kindness & Empathy:</strong> You possess a natural warmth and compassion that makes
+                    people feel comfortable and valued around you.</li>
+                <li><strong>Strength & Independence:</strong> You know who you are and what you want, which is
+                    incredibly admirable.</li>
+                <li><strong>Unmatched Beauty:</strong> Both inside and out, you are truly stunning.</li>
+                <li><strong>Shared Values:</strong> Our fundamental beliefs about life, relationships, and what matters
+                    most align in a way that feels both comfortable and inspiring.</li>
+            </ul>
+
+            <h3>4.2. Compatibility and Synergy</h3>
+            <p>Our interactions demonstrate a remarkable level of compatibility:</p>
+            <ul>
+                <li>We can transition from deep, meaningful conversations to silly banter with natural ease.</li>
+                <li>We share similar senses of humor and find joy in the same things.</li>
+                <li>We challenge each other to grow while providing a safe space to be vulnerable.</li>
+                <li>Time spent together feels both exciting and comfortable, like coming home.</li>
+            </ul>
+        </section>
+
+        <section id="role">
+            <h2>5. Defining the Role: Boyfriend Position Overview</h2>
+            <p>Should you accept this proposal, I commit to fulfilling the duties and responsibilities of the Boyfriend
+                role with dedication and enthusiasm:</p>
+            <ul>
+                <li><strong>Primary Emotional Support:</strong> Being your safe harbor, your biggest cheerleader, and
+                    your most trusted confidant.</li>
+                <li><strong>Adventure Coordinator:</strong> Planning and executing memorable experiences, from simple
+                    date nights to grand adventures.</li>
+                <li><strong>Chief Laughter Officer:</strong> Ensuring a steady supply of joy, humor, and
+                    lightheartedness in your life.</li>
+                <li><strong>Personal Chef (Amateur):</strong> Preparing meals together.</li>
+                <li><strong>Unwavering Loyalty & Commitment:</strong> Being consistently present, reliable, and devoted
+                    to our partnership.</li>
+            </ul>
+        </section>
+
+        <section id="terms">
+            <h2>6. Term & Conditions</h2>
+            <p>This position is proposed as an <span class="highlight">indefinite, exclusive arrangement</span>, with
+                the mutual understanding that it requires ongoing effort, communication, and nurturing from both
+                parties.</p>
+            <ul>
+                <li><strong>Exclusivity:</strong> This role requires mutual exclusivity and commitment.</li>
+                <li><strong>Communication:</strong> Open, honest, and regular communication is expected and encouraged.
+                </li>
+                <li><strong>Growth Mindset:</strong> Both parties agree to grow individually and as a couple, navigating
+                    challenges together with patience and understanding.</li>
+                <li><strong>Termination Clause:</strong> This agreement can only be dissolved through mutual discussion
+                    and agreement, or in cases of fundamental breach of trust or respect.</li>
+            </ul>
+        </section>
+
+        <section id="acceptance">
+            <h2>7. Next Steps & Formal Acceptance</h2>
+            <p>By signing below, you indicate your acceptance of this proposal and agree to enter into an exclusive
+                romantic relationship with the undersigned.</p>
+
+            <div class="options">
+                <div class="option accept" onclick="selectOption('accept')">
+                    <input type="radio" id="accept" name="response" value="accept">
+                    <label for="accept"><i class="fas fa-heart heart"></i> Accept Proposal</label>
+                    <p>I enthusiastically accept your proposal!</p>
+                </div>
+                <div class="option meeting" onclick="selectOption('meeting')">
+                    <input type="radio" id="meeting" name="response" value="meeting">
+                    <label for="meeting"><i class="fas fa-coffee"></i> Discuss Further</label>
+                    <p>I'd like to discuss this in person.</p>
+                </div>
+                <div class="option decline" onclick="selectOption('decline')">
+                    <input type="radio" id="decline" name="response" value="decline">
+                    <label for="decline"><i class="fas fa-times-circle"></i> Decline</label>
+                    <p>I appreciate the offer but must decline.</p>
+                </div>
+            </div>
+
+            <div id="responseMessage"></div>
+
+            <button onclick="submitResponse()">Submit Your Response</button>
+
+            <div class="signature-box">
+                <div class="signature">
+                    <p>Proposed By:</p>
+                    <div class="signature-line"></div>
+                    <p><strong>[Warima Edgar]</strong></p>
+                    <p>Date: <input type="text" id="proposerDate" placeholder="MM/DD/YYYY"></p>
+                </div>
+                <div class="signature">
+                    <p>Accepted By:</p>
+                    <div class="signature-line"></div>
+                    <p><strong>[Person X]</strong></p>
+                    <p>Date: <input type="text" id="acceptorDate" placeholder="MM/DD/YYYY"></p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>This document and the proposal contained herein are confidential and intended solely for the recipient.
+            </p>
+            <p>Powered by <span class="heart">❤</span> and a hopeful heart</p>
+        </footer>
+    </div>
+
+    <script>
+        // Create floating hearts
+        function createHearts() {
+            const container = document.getElementById('floatingHearts');
+            const heartCount = 15;
+
+            for (let i = 0; i < heartCount; i++) {
+                const heart = document.createElement('div');
+                heart.className = 'heart-icon';
+                heart.innerHTML = '❤';
+                heart.style.left = Math.random() * 100 + '%';
+                heart.style.animationDelay = Math.random() * 8 + 's';
+                heart.style.fontSize = (Math.random() * 15 + 10) + 'px';
+                container.appendChild(heart);
+            }
+        }
+
+        // Handle option selection
+        function selectOption(option) {
+            // Remove selected classes from all options
+            document.querySelectorAll('.option').forEach(el => {
+                el.classList.remove('accept-selected', 'meeting-selected', 'decline-selected');
+            });
+
+            // Add selected class to clicked option
+            const selectedOption = document.querySelector(`.option.${option}`);
+            selectedOption.classList.add(option + '-selected');
+
+            // Update radio button
+            document.getElementById(option).checked = true;
+        }
+
+        // Handle form submission
+        function submitResponse() {
+            const selectedOption = document.querySelector('input[name="response"]:checked');
+            const responseMessage = document.getElementById('responseMessage');
+
+            if (!selectedOption) {
+                responseMessage.textContent = "Please select an option before submitting.";
+                responseMessage.style.display = 'block';
+                responseMessage.style.color = 'var(--danger)';
+                return;
+            }
+
+            const today = new Date();
+            const dateStr = today.toLocaleDateString('en-US', {
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
+            });
+
+            if (selectedOption.value === 'accept') {
+                responseMessage.innerHTML = `Thank you for accepting my proposal! <span class="heart">❤</span><br>I'm so excited to start this beautiful journey with you.<br>This marks the beginning of our official relationship as of ${dateStr}.`;
+                responseMessage.style.color = 'var(--success)';
+                document.getElementById('acceptorDate').value = today.toLocaleDateString();
+            } else if (selectedOption.value === 'meeting') {
+                responseMessage.innerHTML = `Thank you for your response. I look forward to discussing this with you in person soon.<br>I'll be in touch to arrange our meeting.`;
+                responseMessage.style.color = 'var(--warning)';
+            } else if (selectedOption.value === 'decline') {
+                responseMessage.innerHTML = `I respect your decision and thank you for your honesty.<br>I wish you all the best in your journey.`;
+                responseMessage.style.color = 'var(--danger)';
+            }
+
+            responseMessage.style.display = 'block';
+            document.getElementById('proposerDate').value = today.toLocaleDateString();
+
+            // Scroll to response message
+            responseMessage.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Initialize the page
+        document.addEventListener('DOMContentLoaded', function () {
+            createHearts();
+
+            // Add today's date to the proposer date field
+            const today = new Date();
+            document.getElementById('proposerDate').value = today.toLocaleDateString();
+        });
+    </script>
+</body>
+
+</html>
